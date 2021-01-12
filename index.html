@@ -1,0 +1,99 @@
+<!-- DOCUMENTO REALIZADO POR DANIEL SARIEGO ALVAREZ, UOC 2021 -->
+	
+<!DOCTYPE html >
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<!-- Meta para optimizar la visualización en móviles -->
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<!-- Acceso a hoja de estilos como archivo externo -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Inicio - OSCARSCLUB</title>
+</head>
+
+<body>
+	
+	<!-- CABECERA DE LA PÁGINA -->
+	<header id="inicio0">
+		<!-- Cada elemento en un div para ubicarlos en la cuadrícula -->
+		<div class="item1"><button class="session_ini" onclick="(alert('Pendiente de registro'))">Iniciar sesión</button></div>
+		<div class="item2"><a href="index.html" ><div class="logo_index"><p>oscars<span class="text_club">club</span></p></div></a></div>
+		<div class="item3">
+			<!-- Navegación principal del sitio -->
+			<nav>
+				<ul>
+					<li><a href="clubes-tematicos.html">Clubes temáticos</a></li>
+					<li><a href="sesiones-2020.html">Sesiones 2020</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	
+	<!-- CONTENIDO PRINCIPAL -->
+	<main>
+		<article>
+			<h1>¿Qué es Oscars Club?</h1>
+			<p>Oscars Club organiza clubes virtuales de cine de diversos géneros y en diferentes lenguas, para los amantes del cine que quieran compartir reflexiones y debatir sobre las películas que les interesan sin necesidad de tener que ir a un espacio físico.</p>
+		</article>	
+
+		<article id="como_funciona">
+			<h1>¿Cómo funciona?</h1>
+			<figure>
+				<img src="img/howto-register.png" alt="">
+				<figcaption>Regístrate</figcaption>
+			</figure>
+			<figure>
+				<img src="img/howto-club.png" alt="">
+				<figcaption>Inscríbete en un club</figcaption>
+			</figure>
+			<figure>
+				<img src="img/howto-film.png" alt="">
+				<figcaption>Elige una película</figcaption>
+			</figure>
+			<figure>
+				<img src="img/howto-speech.png" alt="">
+				<figcaption>Disfruta del debate</figcaption>
+			</figure>
+		</article>
+
+		<article id="unete_club">
+			<h1>Únete al club</h1>
+			<p class="aggre-club">Estamos mirando tu próxima película preferida.<br />
+			¿Te lo vas a perder?</p>
+			<form id="init">
+				<input type="text" id="name_form" name="name_form" placeholder="Nombre" pattern="[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]{2,64}" title="Sólo caracteres alfabéticos. Un mínimo de 2 y un máximo de 64 caracteres" required>
+				<input type="email" id="email_form" name="email_form" placeholder="Correo electrónico" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}" required>
+				<input type="password" id="pass_form" name="pass_form" placeholder="Contraseña" minlength="3" title="La contraseña debe incluir como mínimo tres carácteres" required>
+				<div class="info_sub">
+					
+						<p class="text_small">INFORMACIÓN SOBRE PROTECCIÓN DE DATOS DE <strong>OSCARS CLUB. Finalidades</strong>: recogida de datos para la inscripción como socio del interesado. <strong>Legitimación</strong>: Consentimiento del interesado. <strong>Destinatarios</strong>: No están previstas cesiones de datos a terceros, salvo obligación legal. <strong>Derechos</strong>: Puede retirar su consentimiento en cualquier momento, así como acceder, rectificar, suprimir sus datos y otros derechos dirigiéndose a oscarsclub@oscarsclub.org. <strong>Información Adicional</strong>: Puede ampliar la información en el enlace de <a href="#">Aviso Legal</a> y <a href="#">Política de privacidad</a>.</p>
+						<label for="conditions"><input type="checkbox" id="conditions" required>He leído y acepto la política de privacidad</label>
+						<input type="submit" class="validate_buttom" value="REGISTRARSE">
+					
+				</div>
+			</form>
+		</article>
+	</main>
+
+	<!-- PIE DE PÁGINA -->
+	<footer>
+		<ul class="foot1">
+			<li><a href="#">Sobre nosotros</a></li>
+			<li><a href="#">Aviso legal</a></li>
+			<li><a href="#">Política de privacidad</a></li>
+		</ul>
+		<ul class="foot2">
+			<li><a href="#">Facebook </a></li>
+			<li><a href="#">Twitter </a></li>
+			<li><a href="#">Youtube </a></li>
+		</ul>
+		<ul class="foot3">
+			<li>&copy; 2021 Daniel Sariego Alvarez</li>
+			<li>Iconos <a href="https://www.flaticon.com" target="_blank">flaticon.com</a></li>
+			<li>Imágenes <a href="https://unsplash.com" target="_blank">unsplash.com</a></li>
+			<li class="init_upp"><a href="#inicio0">&xwedge; </a></li>
+		</ul>
+	</footer>
+
+</body>
+</html>
