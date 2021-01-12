@@ -1,0 +1,749 @@
+/* DOCUMENTO REALIZADO POR DANIEL SARIEGO ALVAREZ, UOC 2021 */
+
+/* FUENTES PARA USAR EN EL DOCUMENTO, importadas desde google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,700&display=swap');
+
+/* MOBILE FIRST */
+
+/* ------------------ */
+/* Elemento globales */
+/* ---------------- */
+body {
+  margin: 0;
+  line-height: 1.5em;
+  font-family: 'Noto Serif', serif;
+  background: #e8e8e8;
+}
+h1 {
+  font-size: 1.8em;
+  margin-bottom: 1.3em;
+  line-height: 1.4em;
+  font-weight: 700;
+}
+h2 {
+  text-align: left;
+  font-size: 1.5em;
+  margin-top: 2em;
+}
+h3 {
+  text-align: left;
+  font-size: 1.3em;
+  margin-top: 1em;
+  font-family: 'Open Sans', sans-serif;
+}
+figure {
+  margin: 0;
+  padding: 0;
+}
+article {
+  margin-top: 2em;
+}
+img {
+  height: auto;
+  max-width: 100%;
+}
+header,
+main,
+footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 0.8em;
+  gap: 0.7em;
+  text-align: center;
+  padding: 1em;
+}
+footer,
+header,
+form#init,
+nav {
+  font-family: 'Open Sans', sans-serif;
+}
+main {
+  padding: 2em 5vw;
+}
+
+/* --------------------------------------------- */
+/* Estilos para los elementos del pie de página */
+/* ------------------------------------------- */
+footer {
+  background-color: #433a44;
+  color: white;
+  margin-top: 2em;
+  padding-top: 2em;
+}
+footer ul,
+footer li {
+  padding: 0em;
+  list-style: none;
+  margin-bottom: 0.5em;
+}
+footer ul {
+  margin-top: 2em;
+}
+footer a {
+  color: #ffffff;
+  font-weight: 700;
+}
+footer a:hover {
+  color: #9b1700;
+  opacity: 1;
+  text-decoration: none;
+  background-color: #ffffff;
+  border: 1px dotted #9b1700;
+}
+/*Elemento que nos permite ascender a la cabecera*/
+.init_upp {
+  float: right;
+  margin-right: 0.5em;
+  margin-top: -0.3em;
+  font-size: 3em;
+}
+.init_upp a:hover {
+  text-decoration: underline;
+  background-color: #433a44;
+  border: 0;
+}
+
+/*--------*/
+/* INDEX */
+/*------*/
+#como_funciona figure {
+  margin-bottom: 2em;
+}
+#como_funciona img {
+  width: 60%;
+  height: auto;
+}
+/* Bloque para logo cabecera */
+.logo_index {
+  display: inline-block;
+  background-image: url(../img/oscarsclub-isologo.png);
+  background-repeat: no-repeat;
+  background-size: 4em;
+  background-position: left;
+  height: 4em;
+  font-family: 'Noto Serif', serif;
+}
+#inicio0 a:hover {
+  opacity: 1;
+}
+.text_club {
+  font-weight: normal;
+  font-style: italic;
+  color: red;
+}
+/* Estilo para título isologo */
+.logo_index p {
+  font-weight: bold;
+  padding-left: 2.5em;
+  display: inline-block;
+  font-size: 2em;
+}
+a:visited .logo_index {
+  color: black;
+}
+.aggre-club {
+  font-size: 1.8em;
+  line-height: 1.4em;
+  text-align: left;
+}
+
+/* ------------------------------------------------ */
+/* Estilo para em menú de navegación y sus estados */
+/* ---------------------------------------------- */
+nav {
+  margin-top: 1em;
+}
+nav a {
+  color: #1c1c1c;
+  text-decoration: none;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+nav a.active {
+  font-weight: bold;
+  font-style: italic;
+}
+nav a:hover {
+  color: rgba(28, 28, 28, 0.5);
+}
+nav ul,
+nav li {
+  margin: 1vw;
+  padding: 0;
+}
+nav li {
+  display: block;
+  margin-right: 2vw;
+}
+
+/* ------------------------------------------------- */
+/* Estilo para los botones, formulario y sus estados*/
+/* ----------------------------------------------- */
+button,
+input[type='submit'] {
+  display: block;
+  margin: 0 auto;
+  color: white;
+  background: #9b1700;
+  padding: 0.5em 0.8em;
+  text-align: center;
+  border: none;
+  font-size: 1em;
+  border-radius: 6px;
+  width: auto;
+}
+button:hover,
+input[type='submit']:hover {
+  background: #dddddd;
+  color: #1c1c1c;
+  box-shadow: 1px 1px 6px #666;
+}
+input {
+  width: 100%;
+  padding: 1em 1em;
+  margin: 0.5em 0;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+input#conditions {
+  display: inline-block;
+  width: auto;
+  margin-right: 1em;
+}
+.text_small {
+  font-size: 0.8em;
+  line-height: 1.1em;
+}
+.info_sub > * {
+  text-align: left;
+  float: left;
+  clear: both;
+  margin-bottom: 1em;
+}
+
+/* ----------------------------------- */
+/* Estilos para enlaces y sus estados */
+/* --------------------------------- */
+a {
+  color: #1c1c1c;
+  text-decoration: none;
+}
+a:hover,
+a:visited {
+  text-decoration: underline;
+  opacity: 0.5;
+}
+
+/* ------------------------------- */
+/* Estilo para el hilo de Ariadna */
+/* ----------------------------- */
+#ariadna {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+.noActive {
+  opacity: 0.5;
+}
+#ariadna li {
+  display: inline;
+}
+#ariadna li:after {
+  content: '/';
+  margin: 0 0.5em;
+}
+#ariadna li:last-child:after {
+  display: none;
+}
+
+/* ----------------------- */
+/* iframe responsive 16:9 */
+/* --------------------- */
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+.embed-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* -------------------------------------- */
+/* Estilos aplicados en clubes-temáticos */
+/* ------------------------------------ */
+#clubes > div {
+  text-align: left;
+  margin-bottom: 2em;
+}
+#clubes figcaption {
+  font-size: 1em;
+  font-weight: 700;
+}
+#clubes a {
+  display: block;
+  margin-bottom: 1em;
+  color: #9b1700;
+  font-weight: bold;
+}
+#clubes img {
+  margin-top: 1em;
+  object-fit: cover;
+  height: 60vw;
+}
+
+/* ----------------------------------- */
+/* Estilos aplicados en sesiones-2020 */
+/* --------------------------------- */
+.sesiones_art p,
+.sesiones_int p {
+  text-align: left;
+}
+.sesiones_int {
+  margin-bottom: -4em;
+}
+.sesiones_art ul,
+.sesiones_art li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-transform: uppercase;
+  text-align: left;
+}
+/* Uso de elemento en línea a para convertirlo en un modelo en bloque */
+.sesiones_art section a {
+  display: block;
+  box-shadow: 1px 1px 1em #666;
+  background-color: white;
+  width: 70%;
+  min-width: 230px;
+  height: auto;
+  margin: 1em auto;
+  padding: 0;
+  position: relative;
+  overflow: visible;
+}
+.sesiones_art section a p {
+  font-weight: 700;
+  padding: 0.5em;
+  font-family: 'Open Sans', sans-serif;
+  margin-top: -0.3em;
+  color: #a01127;
+  font-size: 1em;
+}
+.sesiones_art section a img {
+  object-fit: cover;
+  height: auto;
+  width: 100%;
+}
+.sesiones_art section a:hover {
+  opacity: 0.5;
+  transition: opacity 0.5s;
+  text-decoration: none;
+}
+/*Estilo puntos*/
+.deco_img {
+  color: #a01127;
+  margin-right: 1em;
+}
+
+/*-----------------*/
+/* DETALLE-SESION */
+/*---------------*/
+/*Borde redondo imagen autor*/
+#img_autor {
+  border: 0px solid #000000;
+  border-radius: 50%;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  overflow: hidden;
+  padding: 0px;
+  margin: 0.5em;
+  float: left;
+}
+/*Estilo listas desordenadas y detalle */
+.detalle_ficha {
+  text-align: left;
+}
+.detalle_ficha dt {
+  font-weight: 700;
+  border-bottom: 1px solid black;
+}
+.detalle_ficha dd {
+  margin: 0.5em 0 1em 0.5em;
+}
+.detalle_ficha ul,
+.detalle_ficha li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/*Texto tras video incrustado*/
+.pie_cont {
+  margin-top: -0.3em;
+  font-style: italic;
+  text-transform: uppercase;
+  font-size: 0.8em;
+}
+
+/* -------------------------------------------- */
+/* --- BREAKPOINTS MOVILES (640px o menor) --- */
+/* ------------------------------------------ */
+@media (max-width: 640px) {
+  body {
+    font-size: 16px;
+  }
+}
+
+/* --------------------------------------------- */
+/* --- BREAKPOINTS TABLETS (641px a 1080px) --- */
+/* ------------------------------------------- */
+@media (min-width: 641px) and (max-width: 1080px) {
+  body {
+    font-size: 18px;
+  }
+  /* CABECERA */
+  header {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  nav li {
+    display: inline;
+  }
+  /*Botón Iniciar sesión*/
+  .item1 {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    justify-self: end;
+    align-self: end;
+  }
+  /*Isologo*/
+  .item2 {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    justify-self: start;
+    align-self: end;
+  }
+  /*Menú navegación*/
+  .item3 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    justify-self: start;
+    align-self: end;
+  }
+  /*PIE DE PÁGINA*/
+  footer {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    text-align: left;
+    font-size: 0.9em;
+  }
+  /*Elementos de pie de página*/
+  .foot1 {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    justify-self: start;
+  }
+  .foot2 {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    justify-self: end;
+  }
+  .foot3 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+  }
+
+  /*INDEX*/
+  /* Contenedor Imágenes contenido principal */
+  #como_funciona {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+  }
+  #como_funciona h1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  /*CLUBES-TEMÁTICOS*/
+  #clubes {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    font-size: 1em;
+    grid-gap: 1em;
+    gap: 1em;
+    padding: 1em;
+  }
+  #clubes h1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  #clubes div {
+    justify-self: start;
+  }
+  #clubes img {
+    margin-top: 1em;
+    object-fit: cover;
+    height: 30vw;
+  }
+  /* SESIONES 2020*/
+  .sesiones_int {
+    margin: 0 5vw -5em;
+  }
+  .sesiones_art {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    font-size: 1em;
+    grid-gap: 1em;
+    gap: 1em;
+    padding: 1em;
+  }
+  .sesiones_art h2 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    border-top: 4px dotted #a01127;
+    padding-top: 0.3em;
+  }
+  #indice {
+    grid-row-start: 2;
+    grid-row-end: 8;
+  }
+  #indice li {
+    margin-bottom: 0.2em;
+  }
+  #indice {
+    margin-top: 2em;
+  }
+  .sesiones_art section {
+    align-self: end;
+    justify-self: end;
+  }
+  #ariadna {
+    text-align: left;
+  }
+}
+
+/* ------------------------------------------------------------- */
+/* --- BREAKPOINTS SOBREMESA (Resolución superior a 1080px) --- */
+/* ----------------------------------------------------------- */
+@media (min-width: 1081px) {
+  body {
+    font-size: 20px;
+  }
+  /*CABECERA*/
+  header {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+  }
+  .item1 {
+    grid-column-start: 4;
+    grid-row-start: 1;
+    justify-self: end;
+    align-self: end;
+  }
+  .item2 {
+    display: table-cell;
+    vertical-align: middle;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    justify-self: start;
+    align-self: end;
+  }
+  .item3 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    align-self: end;
+  }
+  nav li {
+    display: inline;
+  }
+  /*INDEX*/
+  #como_funciona {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  #como_funciona h1 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+  }
+  /*Formulario entrada*/
+  #unete_club {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 2em;
+  }
+  #unete_club h1 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+  }
+  .aggre-club {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    margin-right: 2em;
+  }
+  #init {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    margin-left: 2em;
+  }
+  /*PIE DE PÁGINA*/
+  footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: left;
+    font-size: 0.8em;
+  }
+  .foot1 {
+    grid-column-start: 1;
+    grid-row-start: 1;
+    justify-self: start;
+    align-self: end;
+  }
+  .foot2 {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    justify-self: end;
+    align-self: end;
+  }
+  .foot3 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    text-align: left;
+  }
+  /*Elemento regreso cabecera*/
+  .init_upp {
+    justify-self: end;
+  }
+  /*Contruimos en horizontal las listas*/
+  .foot3 li {
+    display: block;
+  }
+  footer li {
+    display: inline;
+  }
+  /*Añadimos separadores*/
+  .foot1 li::after,
+  .foot2 li::after {
+    content: ' · ';
+    margin: 0 1em;
+  }
+  .foot1 li:last-child:after,
+  .foot2 li:last-child:after {
+    display: none;
+  }
+  /* CLUBES-TEMÁTICOS */
+  #clubes {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    font-size: 1em;
+    grid-gap: 1em;
+    gap: 1em;
+    padding: 1em;
+  }
+  #clubes h1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+  #clubes div {
+    justify-self: start;
+  }
+  #clubes img {
+    margin-top: 1em;
+    object-fit: cover;
+    height: 20vw;
+  }
+
+  /* SESIONES 2020 */
+  .sesiones_int {
+    margin: 0 5vw -5em;
+  }
+  .sesiones_art {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    font-size: 1em;
+    grid-gap: 1em;
+    gap: 1em;
+    padding: 1em;
+  }
+  .sesiones_art h2 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    border-top: 4px dotted #a01127;
+    padding-top: 0.3em;
+  }
+  #indice {
+    grid-row-start: 2;
+    grid-row-end: 8;
+  }
+  #indice li {
+    margin-bottom: 0.2em;
+  }
+  #indice {
+    margin-top: 2.5em;
+  }
+  .sesiones_art section {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    font-size: 1em;
+    grid-gap: 1em;
+    gap: 1em;
+    padding: 1em;
+  }
+  .sesiones_art section h3 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+  .sesiones_art section a {
+    width: 21vw;
+    min-width: 230px;
+    height: auto;
+    margin-top: -0.5em;
+  }
+
+  /* DETALLE SESIÓN */
+  .detalle_ficha {
+    display: grid;
+    grid-template-columns: repeat(10, auto);
+    font-size: 1em;
+    grid-gap: 1em;
+    gap: 1em;
+    padding: 1em;
+  }
+  #ariadna {
+    grid-column-start: 2;
+    grid-column-end: 10;
+    justify-self: start;
+  }
+  .detalle_ficha h1 {
+    grid-column-start: 2;
+    grid-column-end: 10;
+    justify-self: start;
+    align-self: end;
+  }
+  #ficha {
+    margin-top: -3em;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    justify-self: start;
+    align-self: start;
+  }
+  #info {
+    margin: -3em 0 0 2em;
+    grid-column-start: 5;
+    grid-column-end: 10;
+    justify-self: start;
+    align-self: start;
+  }
+}
