@@ -1,0 +1,49 @@
+{
+  "name": "nodejs_uoc",
+  "version": "1.0.0",
+  "description": "Repositorio UOC",
+  "main": "src/index.html",
+  "scripts": {
+    "server": "live-server src --open",
+    "parcel:dev": "parcel src/index.html",
+    "parcel:dev2": "parcel dsariego/index.html",
+    "parcel:build": "parcel build src/index.html",
+    "parcel:build2": "parcel build dsariego/index.html",
+    "dev": "npm-run-all clean parcel:dev",
+    "build": "npm-run-all clean parcel:build",
+    "clean": "rimraf dist .cache .cache-loader",
+    "format": "prettier --write \"src/**/*.js\"",
+    "lint": "eslint \"src/**/*.js\" --quiet",
+    "test": "jest --passWithNoTests --silent",
+    "dsariego": "npm-run-all clean parcel:dev2",
+    "build2": "npm-run-all clean parcel:build2"
+  },
+  "keywords": [],
+  "author": {
+    "name": "Daniel Sariego Alvarez",
+    "email": "dsariego@uoc.edu"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.13.10",
+    "@babel/preset-env": "^7.13.10",
+    "autoprefixer": "^9.8.6",
+    "babel-jest": "^26.6.3",
+    "eslint": "^7.22.0",
+    "eslint-config-prettier": "^8.1.0",
+    "gulp": "^4.0.2",
+    "gulp-postcss": "^9.0.0",
+    "jest": "^26.6.3",
+    "parcel-bundler": "^1.12.3",
+    "prettier": "^2.2.1"
+  },
+  "dependencies": {
+    "live-server": "^1.2.1",
+    "npm-run-all": "^4.1.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dsariego/dsariego"
+  },
+  "homepage": "https://github.com/dsariego/dsariego"
+}
