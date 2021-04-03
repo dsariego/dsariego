@@ -6,17 +6,13 @@
   "scripts": {
     "server": "live-server src --open",
     "parcel:dev": "parcel src/index.html",
-    "parcel:dev2": "parcel dsariego/index.html",
     "parcel:build": "parcel build src/index.html",
-    "parcel:build2": "parcel build dsariego/index.html",
     "dev": "npm-run-all clean parcel:dev",
     "build": "npm-run-all clean parcel:build",
     "clean": "rimraf dist .cache .cache-loader",
     "format": "prettier --write \"src/**/*.js\"",
     "lint": "eslint \"src/**/*.js\" --quiet",
     "test": "jest --passWithNoTests --silent",
-    "dsariego": "npm-run-all clean parcel:dev2",
-    "build2": "npm-run-all clean parcel:build2"
   },
   "keywords": [],
   "author": {
